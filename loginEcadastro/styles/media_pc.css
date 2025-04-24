@@ -1,0 +1,79 @@
+@media screen and (min-width: 1600px) {
+    .container {
+        padding: 32px; /* Aumenta o espaçamento em telas maiores */
+    }
+
+    .container .titulo h1 {
+        font-size: 3rem; /* Título maior para resoluções maiores */
+    }
+
+    .descricao h2 {
+        font-size: 2.5rem;
+    }
+
+    .descricao p {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+
+    .botao a {
+        width: 240px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    /* Barra de navegação */
+.container_navegador {
+background-color: rgba(0, 0, 0, 0);
+position: absolute;
+top: 0;
+right: 0;
+width: 60%; /* Aumentado para ocupar mais da tela */
+display: flex;
+justify-content: flex-end;
+align-items: center; /* Alinha verticalmente */
+padding: 24px; /* Aumentado para dar mais "respiro" */
+z-index: 10; /* Mantido para sobrepor o conteúdo */
+}
+
+/* Navegação */
+.navegador {
+background-color: rgba(0, 0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+/* Lista de navegação */
+.navegador ul {
+display: flex;
+flex-direction: row;
+list-style: none;
+padding: 16px;
+gap: 48px; /* Aumentado o espaçamento entre os itens */
+}
+
+/* Itens de navegação */
+.navegador li {
+display: flex;
+align-items: center;
+}
+
+/* Links da navegação */
+.navegador a {
+text-decoration: none;
+color: var(--cor-secundaria);
+font-weight: bold;
+font-size: 1.6rem; /* Aumentado o tamanho da fonte dos botões */
+padding: 8px 16px; /* Adicionado padding para área de clique maior */
+transition: color 0.3s ease, background 0.3s ease;
+border-radius: 4px; /* Deixa o botão mais "clicável" visualmente */
+}
+
+.navegador a:hover {
+color: var(--cor-primaria);
+background-color: rgba(255, 255, 255, 0.1); /* Efeito visual ao passar o mouse */
+}
+
+}
